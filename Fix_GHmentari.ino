@@ -91,7 +91,7 @@ void updateSystem() {
       });
     }
     lastSoilRead = millis();
-    Serial.println(">>> Sensor Tanah & Pompa Diupdate (Interval 1 Menit)");
+    Serial.println(">>> Done");
   }
 
   fanPercent = fuzzyFan(suhu);
