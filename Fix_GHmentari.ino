@@ -40,7 +40,7 @@ int fanPercent, lampPWM;
 const int pwmFreq = 5000;
 const int pwmRes  = 8;
 
-/* ================= FUZZY LOGIC ================= */
+/* ================= FUZZY SUGENO LOGIC ================= */
 float mu_dingin(float x){ if (x <= 15) return 1; if (x >= 25) return 0; return (25 - x) / 10.0; }
 float mu_normal(float x){ if (x <= 20 || x >= 30) return 0; if (x <= 25) return (x - 20) / 5.0; return (30 - x) / 5.0; }
 float mu_panas(float x){ if (x <= 28) return 0; if (x >= 40) return 1; return (x - 28) / 12.0; }
